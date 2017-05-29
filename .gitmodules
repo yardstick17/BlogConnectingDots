@@ -1,0 +1,3 @@
+[submodule "output"]
+	path = output
+	url = https://github.com/yardstick17/yardstick17.github.io.git
