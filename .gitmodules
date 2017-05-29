@@ -1,3 +1,6 @@
 [submodule "output"]
 	path = output
 	url = https://github.com/yardstick17/yardstick17.github.io.git
+[submodule "pelican-blue"]
+	path = pelican-blue
+	url = git@github.com:yardstick17/pelican-blue.git
