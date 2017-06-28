@@ -1,14 +1,14 @@
-Title: Image Quality: Is your click Beautiful?
+Title: Image Aesthetic Assessment
 Date: 2017-05-01 00:00
 Category: Deep Learning, Artificial Intelligence
-Summary: Image Aesthetic Assessment using Deep Learning. The defined network takes the complete image instead of fixed or re-sized input. This makes the network to learn for oringal image composition.  
+Summary: Image Aesthetic Assessment using Deep Learning. The defined network takes the complete image instead of fixed or re-sized input. This makes the network to learn for original image composition.  
 
 
 <br>
 
 
 
-***'Beauty is really in the eye of the beholder'***
+> **_"Beauty is really in the eye of the beholder"_**
 
 
 Image aesthetics assessment is an attempt to define the **beauty** of an Image.

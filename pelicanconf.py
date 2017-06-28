@@ -23,24 +23,25 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
+TWITTER_USERNAME = 'imYardstick17'
 
 THEME = 'pelican-blue'
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/yardstick17'),
           ('github', 'https://github.com/yardstick17'),
-          ('twitter', 'https://twitter.com/iamYardstick17'),
+          ('twitter', 'https://twitter.com/imYardstick17'),
           )
 
 SIDEBAR_DIGEST = 'AI | NLP | DEEP LEARNING'
 
 FAVICON = 'https://b.zmtcdn.com/images/logo/zomato_logo.svg'
 
-DISPLAY_PAGES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = False
 
-TWITTER_USERNAME = 'iamYardstick17'
 
-MENUITEMS = (('About', SITEURL + '/pages/about-me.html'), ('Blog', SITEURL),)
+MENUITEMS = (('About Me', SITEURL + '/pages/about-me.html'), ('Blog', SITEURL), ('Archive', SITEURL + '/archives.html'),
+             ('Categories', SITEURL + '/categories.html'))
 
-DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = True
 DEFAULT_CATEGORY = 'misc'
 
 DISQUS_SITENAME = "amitkushwaha"

@@ -16,6 +16,6 @@ At 40, I will start writing about life and experiences, not now.
 
 I dream to pursue Artificial Intelligence as an independent researcher in future. 
 
-![](http://image.ibb.co/khADmQ/Amit.jpg)
+![Amit Kushwaha](http://image.ibb.co/khADmQ/Amit.jpg)
 
 Thanks
