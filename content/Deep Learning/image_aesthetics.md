@@ -1,9 +1,8 @@
 Title: Image Aesthetic Assessment
 Date: 2017-05-01 00:00
-Category: Deep Learning, Artificial Intelligence
-Summary: Image Aesthetic Assessment using Deep Learning. The defined network takes the complete image instead of fixed or re-sized input. This makes the network to learn for original image composition.  
-
-
+Category: Deep Learning
+Summary: Image Aesthetic Assessment using Deep Learning. The defined network takes the complete image instead of fixed or re-sized input. This makes the network to learn for original image composition. 
+Tags: image quality prediction, spatial pyramid pooling, spp-net, deep learning
 <br>
 
 

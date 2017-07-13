@@ -26,6 +26,7 @@ DEFAULT_PAGINATION = 10
 TWITTER_USERNAME = 'imYardstick17'
 
 THEME = 'pelican-blue'
+# THEME = 'bootlex'
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/yardstick17'),
           ('github', 'https://github.com/yardstick17'),
           ('twitter', 'https://twitter.com/imYardstick17'),
@@ -33,10 +34,9 @@ SOCIAL = (('linkedin', 'https://www.linkedin.com/in/yardstick17'),
 
 SIDEBAR_DIGEST = 'AI | NLP | DEEP LEARNING'
 
-FAVICON = 'https://b.zmtcdn.com/images/logo/zomato_logo.svg'
+FAVICON = 'url-to-favicon'
 
-DISPLAY_PAGES_ON_MENU = False
-
+DISPLAY_PAGES_ON_MENU = True
 
 MENUITEMS = (('About Me', SITEURL + '/pages/about-me.html'), ('Blog', SITEURL), ('Archive', SITEURL + '/archives.html'),
              ('Categories', SITEURL + '/categories.html'))
@@ -45,4 +45,4 @@ DISPLAY_CATEGORIES_ON_MENU = True
 DEFAULT_CATEGORY = 'misc'
 
 DISQUS_SITENAME = "amitkushwaha"
-HEADER_IMAGE = FAVICON
+# HEADER_IMAGE = FAVICON
