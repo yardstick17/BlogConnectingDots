@@ -8,11 +8,11 @@ SITEURL = 'http://localhost:8000'
 
 PATH = 'content'
 
-STATIC_PATHS = ['images', 'pdfs', 'downloads']
+# STATIC_PATHS = ['images', 'pdfs', 'downloads']
 # STATIC_PATHS = ['blog', 'downloads']
-ARTICLE_PATHS = ['blog']
-ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
-ARTICLE_URL = '{date:%Y}/{slug}.html'
+# ARTICLE_PATHS = ['blog']
+# ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
+# ARTICLE_URL = '{date:%Y}/{slug}.html'
 
 TIMEZONE = 'Asia/Calcutta'
 
@@ -27,9 +27,7 @@ AUTHOR_FEED_RSS = None
 
 DEFAULT_PAGINATION = 10
 
-# Uncomment followin
-#
-# g line if you want document-relative URLs when developing
+# Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 TWITTER_USERNAME = 'imYardstick17'
 
@@ -54,3 +52,4 @@ DEFAULT_CATEGORY = 'misc'
 
 DISQUS_SITENAME = "amitkushwaha"
 # HEADER_IMAGE = FAVICON
+# MENUITEMS = (('Blog', SITEURL),)
