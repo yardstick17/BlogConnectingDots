@@ -26,5 +26,8 @@ DISQUS_SITENAME = "amitkushwaha"
 GOOGLE_ANALYTICS = "UA-98482392-1"
 
 MENUITEMS = (('About', SITEURL + '/pages/about-me.html'), ('Blog', SITEURL), ('Archive', SITEURL + '/archives.html'),
-             ('Categories', SITEURL + '/categories.html'))
+             ('Categories', SITEURL + '/categories.html'),
+
+
+             )
 

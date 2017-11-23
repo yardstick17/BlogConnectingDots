@@ -8,6 +8,12 @@ SITEURL = 'http://localhost:8000'
 
 PATH = 'content'
 
+STATIC_PATHS = ['images', 'pdfs', 'downloads']
+# STATIC_PATHS = ['blog', 'downloads']
+ARTICLE_PATHS = ['blog']
+ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
+ARTICLE_URL = '{date:%Y}/{slug}.html'
+
 TIMEZONE = 'Asia/Calcutta'
 
 DEFAULT_LANG = 'en'
@@ -22,7 +28,7 @@ AUTHOR_FEED_RSS = None
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+RELATIVE_URLS = True
 TWITTER_USERNAME = 'imYardstick17'
 
 THEME = 'pelican-blue'
@@ -34,7 +40,7 @@ SOCIAL = (('linkedin', 'https://www.linkedin.com/in/yardstick17'),
 
 SIDEBAR_DIGEST = 'AI | NLP | DEEP LEARNING'
 
-FAVICON = 'url-to-favicon'
+FAVICON = SITEURL + '/images/favicon.ico'
 
 DISPLAY_PAGES_ON_MENU = True
 

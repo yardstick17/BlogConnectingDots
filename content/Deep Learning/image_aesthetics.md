@@ -1,193 +1,187 @@
 Title: Image Aesthetic Assessment
-Date: 2017-05-01 00:00
+Date: 2017-04-01 00:00
 Category: Deep Learning
-Summary: Image Aesthetic Assessment using Deep Learning. The defined network takes the complete image instead of fixed or re-sized input. This makes the network to learn for original image composition. 
-Tags: image quality prediction, spatial pyramid pooling, spp-net, deep learning
-<br>
+Summary: Image Aesthetic Assessment using Deep Learning. The defined network takes the complete image instead of fixed or re-sized input. This makes the network to learn about original image composition. 
+Tags: image quality prediction using deep learning, spatial pyramid pooling, spp-net, image quality asssessment
+Title_image: ./../images/image_aesthetics_code.jpg 
+Gitrepo: https://github.com/yardstick17/ConnectingDots
 
 
-
-> **_"Beauty is really in the eye of the beholder"_**
+**_"Beauty is really in the eye of the beholder"_**
 
 
 Image aesthetics assessment is an attempt to define the **beauty** of an Image.
 While everyone has different tastes, there are universally accepted norms when it comes to beauty – things which everyone pretty much agrees are beautiful, like sunsets or sunrises over the mountains or the ocean.
 
 
-![Beautiful Image](https://usatunofficial.files.wordpress.com/2012/03/barns_grand_tetons.jpg)
+Some of the visual features which are generally taken into consideration for an appealing or an unattractive photograph. Some of them are:
+ 
 
-Some of the visual feature that come handy are 
-
-* edge distributions, 
-* color histogram, 
-* Some photographic rules like rue of thirds also determines the beauty of an image.
-
-
-*Defining image quality with visual features like other manually curated features are limited in the scope.*
+* **Edge distributions, Low depth of field,** Images where the subject is in sharp focus while the background is blurred are generally considered aesthetically pleasing. 
+* **Color histogram, Opposing colors,** Displaying colors that appear on opposite sides of the color wheel is visually pleasing.
+* Some photographic rules like **Rule of thirds** also determines the beauty of an image. It states that dividing an image into nine equal parts by drawing two vertical and two horizontal lines should reveal the primary compositional elements near the intersections of the lines.
+* **Salient objects,** Images depicting a large salient object, well separated from the background often have the best composition.
 
 
-<br>
+ 
 
+Defining image quality with visual features like other manually curated features are limited in the scope.
 
 The two photographer's story.
 
   Great Shot!!  | So what?
   ------------- | -------------
-  ![Beautiful Image](https://image.ibb.co/eVhL0k/resize_thumb_ambiance_amazing_1024.jpg)  | ![low quality Image](https://image.ibb.co/ittcfk/resize_thumb_ambiance_bad_1024.jpg)
+  ![Beautiful Image](./../images/resize_thumb_ambiance_amazing_1024.jpg)  | ![low quality Image](./../images/resize_thumb_ambiance_bad_1024.jpg)
   
-The Image is of same place taken with different lightening, angle, adjusted contrast. And it is obvious that image on the left has better aesthetic attire.
+The Image is of the same place taken with different lightning, angle, adjusted contrast. And it is obvious that image on the left has better aesthetic attire.
 
-<br>
+
 
 
 **Significance of Image Aesthetics**
 
-For a platform especially that serves media content, one of the crucial aspect is to show high quality content. With social sites and the given ‘selfie’ trend, we are generating huge amount of data in the form of either images or videos.
+For a platform especially that serves media content, one of the crucial aspects is to show high-quality content. With social sites and the given ‘selfie’ trend, we are generating a huge amount of data in the form of either images or videos.
  Having a track on the quality will always be helpful.
 
 
   Curated Content  |  User Generated Content
   ------------- | -------------
-  ![Curated Content](https://image.ibb.co/fwvb6Q/resize_thumb_Screen_Shot_2017_04_15_at_11_18_25_AM_1024.jpg)  | ![User Generated Content](https://image.ibb.co/kThTLk/resize_thumb_Screen_Shot_2017_04_15_at_11_30_00_AM_1024.jpg)
+  ![Curated Content](./../images/resize_thumb_Screen_Shot_2017_04_15_at_11_18_25_AM_1024.jpg)  | ![User Generated Content](./../images/resize_thumb_Screen_Shot_2017_04_15_at_11_30_00_AM_1024.jpg)
 
 
-<br>
+
 
 ## **Can we model such Human Perception?**
 
-<br>
 
 ## **Deep learning**
 
-The topic needs no introduction. It’s a revolution especially in the image classification domain since the last 5 years. With “Alexnet” winning the Image-Net competition, improving error rate with a huge margin acted as spark in the field. Since then, CNN has many state of the arts on its name.
+The topic needs no introduction. It’s a revolution especially in the image classification domain since the last 5 years. With “Alexnet” winning the Image-Net competition, improving error rate with a huge margin acted as a spark in the field. Since then, CNN has many state of the arts on its name.
 
 **Network architecture of Alexnet.** 
 
-![Alexnet architecture](https://image.ibb.co/cG4sfk/thumb_CNN_image_1024.jpg)
+![Alexnet architecture](./../images/thumb_CNN_image_1024.jpg)
 
-The first layer is input, where input in fed to the network. We can see there pooling operations, convolution operations finally followed by a fully connected layer 
+The first layer is input, where input is fed to the network. We can see their pooling operations, convolution operations finally followed by a fully connected layer 
 and final softmax layer so that we get values as the probability for each class we label.
 
-<br>
+
 
 ## **Fixed size input constraint**
 
   
   Input Layer   |  
   ------------- | -------------
-  ![Input Layer](https://image.ibb.co/mMhFi5/thumb_input_CNN_image_1024.jpg) | Input image **re-sized to 224 * 224** irrespective of original image shape.
+  ![Input Layer](./../images/thumb_input_CNN_image_1024.jpg) | Input image **re-sized to 224 * 224** irrespective of original image shape.
 
 
 We always resize the input feature vector. If the image is larger, image is cropped 
-or pad image if image dimensions are smaller, to get a fixed size input to fed the network
+or pad image if image dimensions are smaller, to get a fixed size input to feed the network
 
 
   
 
   The Mountains |  Qutub Minar
   ------------- | -------------
-  ![Mountains](https://www.freewebheaders.com/wordpress/wp-content/gallery/beautiful-landscape/iceland-blue-lagoon-and-snow-mountains-landscape-header.jpg) | ![Qutub Minar](http://images.mapsofindia.com/india-tour/newvolume/mapindia/india-tour/wp-content/blogs.dir/6/files/2012/09/qutub-minar-minaret.jpg)
+  ![Mountains](./../images/iceland-blue-lagoon-and-snow-mountains-landscape-header.jpg) | ![Qutub Minar](./../images/qutub-minar-minaret.jpg)
 
 
 
 The above two images are **beautiful in their original aspect ratio.** 
 What happens if we re-size the image to a fixed size of 224 * 224? 
-Certainly the image will **loose all it’s original aesthetic value!** 
-From Landscape to Squared size. All damage is done. The original image composition is lost when image is re-sized.
+Certainly, the image will **loose all it’s original aesthetic value!** 
+From Landscape to Squared size. All damage is done. The original image composition is lost when an image is re-sized.
 
-<br>
 
 ## **Demystifying the Network Architecture**
 
-![Network Architecture](https://image.ibb.co/cG4sfk/thumb_CNN_image_1024.jpg)
+![Network Architecture](./../images/thumb_CNN_image_1024.jpg)
 
-Let’s unveil the hidden layers! So, we can see that after the input , there are few layers of **Operations**. 
+Let’s unveil the hidden layers! So, we can see that after the input, there are few layers of **Operations**. 
 The operations are either **Max-pooling** or convolving with a filter i.e. **Convolution**.
-So why fixed size of input is required at all then?  
+So why the fixed size of input is required at all then?  
 It’s because of the **Fully Connected Layer** just before the outputs. 
-Fully Connected Layers are in the network for non-linear combination of feature extracted before in convolution network.
+Fully Connected Layers are in the network for the non-linear combination of feature extracted before in convolution network.
 
 Let's understand bit by bit.
 
-<br>
+
 
 
 ## **Max Pooling**
 
-Max pooling are there for **Down-sampling** the feature space while maintain the spatial information
+Max pooling are there for **Down-sampling** the feature space while maintaining the spatial information
 Max Pooling in action
 
-![Max Pooling](https://image.ibb.co/jKK0GQ/cropped_max_pooling.gif)
+![Max Pooling](./../images/cropped_max_pooling.gif)
 
 
-<br>
+
 
 
 ##**Spatial Pyramid Pooling**
-In spp, an image is divided into bins. Each bin is pooled in its turn. As the number of bins are fixed, 
+In spp, an image is divided into bins. Each bin is pooled in its turn. As the number of bins is fixed, 
 we always get the **Fixed Shape Output**.
 
 Spp operation in action
 
-![Spatial Pyramid Pooling](https://image.ibb.co/juAki5/sppp_2_cropped.gif)
+![Spatial Pyramid Pooling](./../images/sppp_2_cropped.gif)
 
-![Spatial Pyramid Pooling](https://image.ibb.co/f77y35/bin_4_spp.gif)
+![Spatial Pyramid Pooling](./../images/bin_4_spp.gif)
 
-<br>
+
 
 
 ##**Spp Network Architecture**
 
-![Spp Network Architecture](https://image.ibb.co/fxiPAk/network.png)
+![Spp Network Architecture](./../images/network.png)
 
-The first network is the traditional CNN , we can see the **Max-pool layer** just before the fully connected layer.
+The first network is the traditional CNN, we can see the **Max-pool layer** just before the fully connected layer.
 In the second architecture, the last max pooling layer is **replaced by a Spp layer**. 
 With the **Fixed Bin size (1,2,4)** we make sure that the fully connected layer gets the fixed shape input.
 
-![Spp Network Architecture](https://camo.githubusercontent.com/9099d29d9e59248dff137dd10189e0c81d35aa56/687474703a2f2f692e696d6775722e636f6d2f5351574a566f442e706e67)
+![Spp Network Architecture](./../images/687474703a2f2f692e696d6775722e636f6d2f5351574a566f442e706e67.png)
 
 
-<br>
 
 ##**Training the Spp-Net**
 
-Training the Spp-Net on **live-dataset**, very small dataset, about 1K images total, model achieved the accuracy of 75% on training data, 83% on the test data.
+Training the Spp-Net on **live-dataset**, very small dataset, about 1K images total, model achieved the accuracy of 75% on training data, 83% of the test data.
 
   Accuracy  |  Training Loss
   ------------- | -------------
-  ![Spp-Net Accuracy](https://image.ibb.co/m9AAi5/training_accuracy.png)  | ![Spp-Net Training Loss](https://image.ibb.co/fkS1qk/training_loss.png)
+  ![Spp-Net Accuracy](./../images/training_accuracy.png)  | ![Spp-Net Training Loss](./../images/training_loss.png)
 
 
-
-<br>
 
 ##**Takeaways**
 
 **With Spp in Network**  
 
 * Model learns the scale invariant feature like SIFT(traditional image processing algorithm).
-* One of the challenge in text classification with Deep learning is the fixed size feature vector representation of sentence.
+* One of the challenges in text classification with Deep learning is the fixed size feature vector representation of the sentence.
 
-
-<br>
 
 ##**Interesting Results**
 
-<br>
 
-  Blurred Cropped Image, Model predicted **high score of 0.46** |     
+After training model, I experimented with few results. These are the most interesting and promising results I found.
+
+  Blurred Cropped Image  | Complete Image
+  ---------------------- | -------------
+  ![Blurred Image](./../images/low_quality_blurred_image.jpg) | ![Complete Image](./../images/high_quality_blurred_image.jpg)
+
+I recently came across a [Photographer](https://philliphaumesserphotography.com) experience from being an amateur to professional.  
+He proved what difference a change in perspective can make. So, I decided to make my trained model judge for his efficacy.
+
+  Amateur Click? Yes, it is.  | Pro Click? I am already amazed.
   ------------- | -------------
-  ![Blurred Image](https://image.ibb.co/nqyrqk/Screen_Shot_2017_04_25_at_2_48_51_PM.png)  |
-    
+  ![Beautiful Image](../images/amateur_photographer.png)  | ![low quality Image](../images/professionl_photographer.png)
 
-<br>
+The aesthetic trained model has passed him with flying colors in Photographic skills. Well done Phillip Haumesser.
 
-  Complete Image, Model predicted **high score of 0.94** |  
-  ------------- | -------------
-  ![Complete Image](https://image.ibb.co/fR5zbQ/blurred_0071.jpg)  | 
-      
-
-<br>
+##**SPP Network**
+<script src="https://gist.github.com/yardstick17/22c02363c5e04763373b588f1a3bceeb.js"></script>
 
 ##**References**
 
@@ -196,4 +190,4 @@ Training the Spp-Net on **live-dataset**, very small dataset, about 1K images to
 * [Long Mai, Hailin Jin, Feing Liu, Composition-Preserving Deep Photo Aesthetics Assessment](https://ieeexplore.ieee.org/document/7780429/)
 
 
-With that I would like to wrap up. Any Questions ?
+With that, I would like to wrap up. Any Questions?
