@@ -29,6 +29,10 @@ Among many various data types in Python, these are the important types are liste
    - dictionary: {1: 'one', 2: 'two'}
    
 ### **INTEGERS, FLOATS**
+
+These are for storinng numerical data. Numerical data can be of three types: Integer, Float and Complex. Python offers
+all these three. But let's focus on Integer and Float only.
+
 Python interprets the decimal digits without any prefix. For example: 
 ```python
 >>> x = 4
@@ -97,8 +101,10 @@ Traceback (most recent call last):
 TypeError: 'str' object does not support item assignment
 
 ```
+This means once a string objects is created, it cannot be changed which makes them `immutable`.
 
 ### **LIST**
+
 A list is a ordered sequence of items. The items can be of any data types.
 ```python
 >>> x = [1, 'hello world', 1.2]
@@ -128,6 +134,8 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'tuple' object does not support item assignment
 ```
+Tuple is also an `immutable` data-types.
+
 ### **SET**
 
 A set is an unordered collection of unique items.
@@ -150,6 +158,7 @@ TypeError: 'set' object does not support indexing
 ```
 
 ### **DICTIONARY**
+
 A dictionary is an collection of key-values pairs. They are meant to be used for accessing random key data.
 ```python
 >>> x = {1 : 'one', 2: 'two', 3: 'three'}
@@ -159,6 +168,9 @@ A dictionary is an collection of key-values pairs. They are meant to be used for
 'three'
 
 ```
+One important thing to remember about dictionary is that only `immutable` data-types can be keys.
+
+
 
 This pretty much covers the basic types of data-types in python. There are more specialized
 data types like dates and times, queues, fixed-type arrays etc. Just like the other data types
