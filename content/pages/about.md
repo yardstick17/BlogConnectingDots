@@ -2,7 +2,9 @@ Title: About me
 Date: 2014-12-13 18:32
 
 
-I am a Machine Learning Engineer at [Zomato](www.zomato.com). 
+Currently, I am working as a Backend Engineer in the Pricing and Forecasting Department of [Zalando SE](https://www.en.zalando.de). 
+My job is to work and deliver Optimal Discount Recommendation every week to go online on the platform. Earlier, I was working as a Machine Learning Engineer at [Zomato](https://www.zomato.com).
+
 My major areas of interests are Deep Learning and Natural Language Processing. 
 I completed undergrad from [IIIT-Allahabad](www.iiita.ac.in) with major in Electronics and Communication. 
 I started this blog to share my knowledge. I find writing helps me in getting deep insights of the topic. I am also in the learning phase. Any suggestions/comment will definitely be helpful.  
