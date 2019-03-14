@@ -23,6 +23,6 @@ fun to work all day with these tasty dishes.
 Also, at 40, I will start writing about life and experiences, not now.
 I dream to pursue Artificial Intelligence as an independent researcher in future. 
 
-![Amit Kushwaha](http://image.ibb.co/khADmQ/Amit.jpg)
+![Amit Kushwaha](https://avatars3.githubusercontent.com/u/10905152?s=400&u=2e24aacafe57c6d317b13cf93685ca8516591b78&v=4)
 
 Thanks

@@ -2,7 +2,6 @@ Title: Understanding CNN
 Date: 2017-05-01 00:00
 Category: Deep Learning
 
- 
 
 Let's start with the most basic element of Neural Network - **Perceptron**.
 

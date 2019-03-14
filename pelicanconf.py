@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 
 AUTHOR = 'Amit Kushwaha'
 SITENAME = 'Connecting Dots'
@@ -31,7 +32,19 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 TWITTER_USERNAME = 'imYardstick17'
 
-THEME = 'pelican-blue'
+MARKUP = ('md', 'ipynb')
+
+PLUGIN_PATHS = ['./plugins']
+PLUGINS = ['ipynb.markup']
+
+IGNORE_FILES = [".ipynb_checkpoints"]
+
+# if you create jupyter files in the content dir, snapshots are saved with the same
+# metadata. These need to be ignored.
+
+EFFECTIVE_THEME = 'aboutwilson'
+EFFECTIVE_THEME = 'elegant'
+THEME = os.path.expanduser('~/pelican-themes/{}'.format(EFFECTIVE_THEME))
 # THEME = 'bootlex'
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/yardstick17'),
           ('github', 'https://github.com/yardstick17'),
@@ -44,8 +57,8 @@ FAVICON = SITEURL + '/images/favicon.ico'
 
 DISPLAY_PAGES_ON_MENU = True
 
-MENUITEMS = (('About Me', SITEURL + '/pages/about-me.html'), ('Blog', SITEURL), ('Archive', SITEURL + '/archives.html'),
-             ('Categories', SITEURL + '/categories.html'))
+MENUITEMS = (('About Me', 'pages/about-me.html'), ('Blog', ''), ('Archive', 'archives.html'),
+             ('Categories', 'categories.html'))
 
 DISPLAY_CATEGORIES_ON_MENU = True
 DEFAULT_CATEGORY = 'misc'

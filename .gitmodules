@@ -4,3 +4,6 @@
 [submodule "pelican-blue"]
 	path = pelican-blue
 	url = git@github.com:yardstick17/pelican-blue.git
+[submodule "plugins/ipynb"]
+	path = plugins/ipynb
+	url = git://github.com/danielfrg/pelican-ipynb.git

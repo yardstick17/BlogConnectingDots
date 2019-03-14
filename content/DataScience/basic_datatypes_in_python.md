@@ -28,7 +28,7 @@ Among many various data types in Python, these are the important types are liste
    - set: {2, 4}
    - dictionary: {1: 'one', 2: 'two'}
    
-### **INTEGERS, FLOATS**
+### **Integers, Floats**
 
 These are for storinng numerical data. Numerical data can be of three types: Integer, Float and Complex. Python offers
 all these three. But let's focus on Integer and Float only.
@@ -70,7 +70,7 @@ Floating points are accurate upto 15 decimal places. In representation, numbers 
 ```
 
 
-### **STRINGS**
+### **Strings**
 
 Strings are the sequence of unicode characters. These sequence must be enclosed by single quotes, double quotes or triple quotes.
 ```python
@@ -101,9 +101,9 @@ Traceback (most recent call last):
 TypeError: 'str' object does not support item assignment
 
 ```
-This means once a string objects is created, it cannot be changed which makes them `immutable`.
+This means once a string objects is created, it cannot be changed which makes them `immutable` data type.
 
-### **LIST**
+### **List**
 
 A list is a ordered sequence of items. The items can be of any data types.
 ```python
@@ -119,7 +119,7 @@ Slicing operations and Value assignment are allowed in list.
 [1, 'world', 1.2]
 ```
 
-### **TUPLE**
+### **Tuple**
 
 A tuple is a sequence of items like list but with a difference that once created, it cannot be
 changed later. It means value assignment is not allowed, just like strings. It is defined by putting
@@ -134,9 +134,9 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'tuple' object does not support item assignment
 ```
-Tuple is also an `immutable` data-types.
+Tuple is also an `immutable` data-type.
 
-### **SET**
+### **Set**
 
 A set is an unordered collection of unique items.
 
@@ -157,7 +157,7 @@ TypeError: 'set' object does not support indexing
 
 ```
 
-### **DICTIONARY**
+### **Dictionary**
 
 A dictionary is an collection of key-values pairs. They are meant to be used for accessing random key data.
 ```python

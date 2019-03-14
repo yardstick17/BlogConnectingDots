@@ -7,14 +7,13 @@ from __future__ import unicode_literals
 
 import os
 import sys
+
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'https://yardstick17.github.io'
+SITEURL = 'https://amitkushwaha.co.in'
 RELATIVE_URLS = False
 
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 TWITTER_USERNAME = 'imYardstick17'
@@ -24,10 +23,13 @@ TWITTER_USERNAME = 'imYardstick17'
 DISQUS_SITENAME = "amitkushwaha"
 
 GOOGLE_ANALYTICS = "UA-98482392-1"
+FAVICON = SITEURL + '/images/favicon.ico'
+MARKUP = ('md', 'ipynb')
 
-MENUITEMS = (('About', SITEURL + '/pages/about-me.html'), ('Blog', SITEURL), ('Archive', SITEURL + '/archives.html'),
-             ('Categories', SITEURL + '/categories.html'),
+PLUGIN_PATHS = ['./plugins']
+PLUGINS = ['ipynb.markup']
 
+IGNORE_FILES = [".ipynb_checkpoints"]
 
-             )
-
+MENUITEMS = (('About Me', 'pages/about-me.html'), ('Blog', ''), ('Archive', 'archives.html'),
+             ('Categories', 'categories.html'))
