@@ -14,7 +14,6 @@ from pelicanconf import *
 SITEURL = 'https://amitkushwaha.co.in'
 RELATIVE_URLS = False
 
-
 DELETE_OUTPUT_DIRECTORY = True
 TWITTER_USERNAME = 'imYardstick17'
 

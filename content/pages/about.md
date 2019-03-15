@@ -2,8 +2,11 @@ Title: About me
 Date: 2014-12-13 18:32
 
 
-Currently, I am working as a Backend Engineer in the Pricing and Forecasting Department of [Zalando SE](https://www.en.zalando.de). 
-My job is to work and deliver Optimal Discount Recommendation every week to go online on the platform. Earlier, I was working as a Machine Learning Engineer at [Zomato](https://www.zomato.com).
+Currently, I am working as a Python Backend Engineer in the Pricing and Forecasting Department of [Zalando SE](https://www.en.zalando.de).
+My team is aiming to build next generation pricing tools which recommends discounts which can be steered toward company goals(e.g. revenue) meeting some
+operational constraints(e.g. logistics). I am working on providing large scale solution by which we solve optimization for about 600K articles on week basis.
+I am majorly involved in writing Spark Pipelines on EMR which solves optimization problem using Pulp, Gurobi as solver.
+Earlier, I was working as a Machine Learning Engineer at [Zomato](https://www.zomato.com).
 
 My major areas of interests are Deep Learning and Natural Language Processing. 
 I completed undergrad from [IIIT-Allahabad](www.iiita.ac.in) with major in Electronics and Communication. 
